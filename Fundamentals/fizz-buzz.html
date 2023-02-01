@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        const fizzbuzz = () => {
+            let answer = parseInt(prompt("Please enter the number you would like to FizzBuzz up to: "));
+            console.log(`Your number is: ${answer}`);
+
+            for (let n = 0; n < answer; n++) {
+                if (n % 3 === 0) {
+                    console.log("Fizz");
+                } else if (n % 5 === 0) {
+                    console.log("Buzz");
+                } else {
+                    console.log(n);
+                }
+            }
+        };
+
+        fizzbuzz();
+    </script>
+</body>
+
+</html>
